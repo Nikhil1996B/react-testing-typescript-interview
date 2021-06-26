@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '../../test/test-utils';
 import { cleanup } from '@testing-library/react';
-
+import ErrorBoundary from '../components/ErrorBoundary';
 import Home from './Home';
 
 describe('renders <Home /> page', () => {
@@ -16,8 +16,4 @@ describe('renders <Home /> page', () => {
     const appContainer = container;
     expect(appContainer.innerHTML).toMatch('Welcome!');
   });
-  // test("Greetings h1 tag rendered", async () => {
-  //   const appContainer = container;
-  //   expect(appContainer.innerHTML).toMatch('Welcome!');
-  // });
 });
